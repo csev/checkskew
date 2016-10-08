@@ -5,7 +5,7 @@ is when you are in a hosted environment that you don't have root so you can't tw
 configuration - so all you can do is monitor and mail yourself a message when clocks
 start to skew and bug the system admin to fix the clock before all your security stuff goes haywire.
 
-This does assume `curl` and that the UNIX `mail` command is configured to work.  Make sure to test
+This does assume `curl` or `wget` and that the UNIX `mail` command is configured to work.  Make sure to test
 both commands before trusting this.
 
 The primary reason I bult this is that when using IMS Learning Tools Interoperability (and other
