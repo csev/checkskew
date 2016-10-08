@@ -21,6 +21,7 @@ The simplest way to install this is just dowload the file.
      curl -O https://raw.githubusercontent.com/csev/checkskew/master/checkskew.sh
   
 or
+
      wget --no-check-certificate https://raw.githubusercontent.com/csev/checkskew/master/checkskew.sh
 
 Make sure to edit the email and tolerance configuration variables in the script.
