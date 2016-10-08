@@ -3,7 +3,7 @@
 A bash script to check the clock skew between a system and `timeapi.org`.  The value of this
 is when you are in a hosted environment that you don't have root so you can't tweak the NTP
 configuration - so all you can do is monitor and mail yourself a message when clocks
-start to skew.
+start to skew and bug the system admin to fix the clock before all your security stuff goes haywire.
 
 This does assume `curl` and that the UNIX `mail` command is configured to work.  Make sure to test
 both commands before trusting this.
