@@ -8,6 +8,10 @@ start to skew and bug the system admin to fix the clock before all your security
 This does assume `curl` and that the UNIX `mail` command is configured to work.  Make sure to test
 both commands before trusting this.
 
+The primary reason I bult this is that when using IMS Learning Tools Interoperability (and other
+OAuth/HMac based security patterns) - when clocks get too far skewed (i.e. > 300 seconds)
+everything breaks down.
+
 Install
 -------
 
