@@ -10,7 +10,14 @@ email='py4e@example.com';
 # name='www.py4e.com';
 name=`hostname`;
 
-actual=`curl -s http://www.timeapi.org/utc/now`
+# http://stackoverflow.com/questions/592620/check-if-a-program-exists-from-a-bash-script
+if hash curl 2>/dev/null; then
+    actual=`curl -s http://www.timeapi.org/utc/now`
+elif hash wget 2>/dev/null; then
+    actual=`wget -q -O - http://www.timeapi.org/utc/now`
+else
+    echo "Cannot find curl or wget - cannot get actual time"
+fi
 
 # uncomment this for testing and tweak the info
 # actual='2015-10-08T13:18:00';
