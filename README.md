@@ -1,6 +1,6 @@
 # checkskew
 
-A bash script to check the clock skew between a system and timeapi.org.  The value of this
+A bash script to check the clock skew between a system and `timeapi.org`.  The value of this
 is when you are in a hosted environment that you don't have root so you can't tweak the NTP
 configuration - so all you can do is monitor and mail yourself a message when clocks
 start to skew.
