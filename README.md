@@ -11,8 +11,8 @@ both commands before trusting this.
 Install
 -------
 
-The simplest way to install this is just dowload the file - I obly have this in github to accept
-pull requests
+I have this in github to accept pull requests if folks find bugs and/or make improvements.
+The simplest way to install this is just dowload the file. 
 
      curl -O https://raw.githubusercontent.com/csev/checkskew/master/checkskew.sh
 
