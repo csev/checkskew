@@ -11,7 +11,9 @@ email='py4e@example.com';
 name=`hostname`;
 
 actual=`curl -s http://www.timeapi.org/utc/now`
-actual='2015-10-08T13:18:00';
+
+# uncomment this for testing and tweak the info
+# actual='2015-10-08T13:18:00';
 echo From web: $actual
 
 # months are all 30 days
